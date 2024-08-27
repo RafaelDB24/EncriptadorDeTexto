@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header id="Principal">
+        <div class="TextoAlura">
+        <img class="Logo" src="a.png" alt="Logo de alura">Alura Latam | Encriptador de Texto
+        </div>
+    </header>
+
+
+    <main class="General">
+        <section id="seccionOne">
+
+            <div id="erroneo" class="msjX"> &nbsp;</div>
+
+         <div id="tesxtarea">
+            <textarea class="Texto" cols="40" rows="20" placeholder="Escribe tu texto...." lang="spanish"></textarea>
+          </div>
+        
+          <div class="buttons">
+            <button class="encriptar" onclick="Bencriptar()">Encriptar</button>
+            <button id="desemcriptar" class="desencriptar" onclick="Bdesencriptar()">Desencriptar</button>
+          </div>
+          <div id="reglas">
+            <h5 id="mensaje" class="permitido">Unicamente texto en minusculas y sin acentos</h5>
+          </div>
+       </section>
+
+       <section id="seccionTwo">
+        <div>
+            <textarea id="textarea2" class="areaCodificada" cols="40" rows="20"> </textarea>
+            
+        </div>
+    
+        <div class="botoncopiar">
+            <button id="Bcopy" class="copiar" onclick="Bcopiar()">Copiar</button>
+        </div>
+        
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="fin"> Desarrollado por Rafael Diaz.</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
